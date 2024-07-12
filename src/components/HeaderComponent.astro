@@ -1,0 +1,53 @@
+---
+import LogoHomeComponent from '../components/LogoHomeComponent.astro';
+import HeaderSearchComponent from '../components/HeaderSearchComponent.astro';
+import HeaderNavComponent from '../components/HeaderNavComponent.astro';
+---
+
+<header class="main-header">
+    <!-- logo-->
+
+    <LogoHomeComponent />
+    <HeaderSearchComponent />
+    <HeaderNavComponent />
+    
+    
+
+</header>
+
+<style>
+    .main-header {
+	position:fixed;
+	width:100%;
+	left:0;
+	top:0;
+	height:80px;
+	background:#2e3f6e;
+	/* background:#8d1601; */
+	/* background: #7B68EE;  */
+
+	z-index:31;
+	padding:0 40px;
+    -webkit-transform: translate3d(0,0,0);
+}
+.main-header:before {
+	content:'';
+	position:absolute;
+	right:0;
+	width:480px;
+	height:100%;
+	bottom:0;
+	opacity:1;
+	transition: all .3s ease-in-out;
+     background: #3d528b; 
+	 /* background: #9370DB;  */
+	 /* 9370DB */
+	/* background: #b48502; */
+}
+.dsh-header.main-header:before {
+	width:540px;
+}
+.main-header.vis-searchdec:before {
+	opacity:0;
+}
+</style>
