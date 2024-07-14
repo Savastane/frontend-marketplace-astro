@@ -1,10 +1,15 @@
 ---
+import imgAvata from '../assets/images/avatar.jpg?url'; 
+
+
+
 ---
         <!-- header-search_btn end-->
     <!-- header opt --> 
     <a href="https://townhub.kwst.net/dashboard-add-listing.html" class="add-list color-bg">RESTRITO <span><i class="fal fa-layer-plus"></i></span></a>
-    <div class="cart-btn   show-header-modal" data-microtip-position="bottom" role="tooltip" aria-label="Your Wishlist"><i class="fal fa-heart"></i><span class="cart-counter green-bg">5savas</span> </div>
-    <div class="show-reg-form modal-open avatar-img" data-srcav="images/avatar/3.jpg"><i class="fal fa-user"></i>Autenticar</div>
+    <div class="cart-btn   show-header-modal" data-microtip-position="bottom" role="tooltip" aria-label="Your Wishlist"><i class="fal fa-heart"></i>
+    <span class="cart-counter green-bg">5</span> </div>
+    <div class="show-reg-form modal-open avatar-img" data-srcav="../assets/images/avatar.jpg"><i class="fal fa-user"></i>Autenticar</div>
     <!-- header opt end--> 
     <!-- lang-wrap-->
     <div class="lang-wrap">
@@ -18,7 +23,188 @@
     </div>
 
 
+
 <style>
+ .color-bg   , .nice-select .option.selected.focus , .nav-holder nav li a:before , .section-separator:before  , .footer-widget h3:before  ,   .cluster div , .pagination a.current-page, .pagination a:hover  ,  .irs-bar , .irs-slider ,  .irs-bar-edge  , .catcar-scrollbar .swiper-scrollbar-drag , .checket-cat:after , .scroll-nav li a.act-scrlink:before  , .listing-carousel_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active , .box-media-zoom , .daterangepicker td.active , .list-widget-social li a , .btn.border-btn:hover  , .chat-message.chat-message_user p  , .chat-widget-button   , .tags-stylwrap a:hover , .custom-form .quantity input.qty , .listing-hero-section .list-single-header-item h1:before , .box-item a , .menu-filters a.menu-filters-active , .promo-link i , .ss-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active , .accordion a.toggle span , .search-widget .search-submit:hover   , .reply-item:hover , #progressbar li.active span , #progressbar li:before , .user-profile-menu li a.user-profile-act:before , .new-dashboard-item  , .dashboard-title:before , .dhs-controls div:hover , .message-counter , .chat-contacts-item:after , .tc-pagination   .swiper-pagination-bullet.swiper-pagination-bullet-active , .tc-pagination2  .swiper-pagination-bullet.swiper-pagination-bullet-active , .down-btn i   , .listing-filters  a.gallery-filter-active , .single-facts_2 .inline-facts-wrap:before  , .single-social li  a   , .mob-nav-content-btn.slsw_vis  , .infobox-status , .header-search_container .header-search-button:hover , .pac-item:hover  , .process-item_time-line:before  , .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover , .listing-item-grid_title h3:before {
+	background:#4DB7FE;
+}
+.green-bg , div.datedropper.primary .pick-submit , .footer-bg-pin    , .gsd_open , .verified-badge    , .toggle-filter-btn.tsb_act  , .status.st_online span  , .slide-progress  , .reply-item , #progressbar li.active:last-child  span , .user-profile-menu li a span  , .infobox-status.open , .map-popup-location-category.shop-cat  , .process-item_time-line:after     {
+	background:#5ECFB1;
+}
+
+.btn.color-bg , .btn.border-btn:hover , .btn.gradient-bg {
+	color:#fff;
+}
+
+.add-list {
+	float:right;
+	padding: 0   22px;
+	position:relative;
+	height:40px;
+	top:20px;
+	line-height:40px;
+	border-radius:4px;
+	color:#fff;
+	font-weight:500;
+	font-size:13px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.1);
+}
+.add-list:hover {
+    box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.0);
+}
+.add-list span {
+	color:#fff;
+	padding-left:10px;
+}
+.cart-btn  {
+	float: right;
+	position:relative;
+	color:#fff;
+	cursor:pointer;
+	margin-right:34px;
+	top:28px;
+	font-size:18px;
+}
+.cart-btn i {
+	width:12px;
+}
+.cart-counter {
+	position:absolute;
+	bottom:-1px;
+	width:14px;
+	height:14px;
+	line-height:14px;
+	border-radius:100%;
+	color:#fff;
+	left:-5px;
+	z-index:2;
+	font-size:8px;
+	font-weight:400;
+}
+
+.show-search-button i.vis-head-search-close:before , .show-header-modal.scwllink i:before {
+	font-family: Font Awesome\ 5 Pro;
+	content: "\f00d";
+}
+.show-header-modal.scwllink .cart-counter {
+	opacity:0;
+}
+.show-reg-form {
+    float: right;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 40px;
+    position: relative;
+    top: 32px;
+	font-weight:500;
+    font-size: 12px;
+}
+.show-reg-form:before {
+	content:'';
+	position:absolute;
+	left:-25px;
+	top:50%;
+	height:20px;
+	margin-top:-10px;
+	width:1px;
+	background:rgba(255,255,255,0.31);
+}
+.show-reg-form i {
+	margin-right:14px;
+}
+.lang-wrap  {
+	float: right;
+	margin-right:20px;
+	position:relative;
+	top:20px;
+}
+.lang-tooltip {
+	position:absolute;
+	top:40px;
+	right:0;
+	width:100px;
+	z-index:105;
+	background:#fff;
+	padding:10px 0 12px;
+	border-radius:4px;
+	border:1px solid #eee;
+	border-top:none;
+	visibility:hidden;
+	opacity:0;
+}
+.lang-tooltip li  {
+	float:left;
+	width:100%;
+	position:relative;
+	text-align:left;
+	color:#fff;
+	border-radius:4px;
+	padding:6px 14px;
+}
+.lang-tooltip li a  {
+	color: #566985;
+	font-weight:500;
+	font-size:10px;
+	text-transform:uppercase;
+	position:relative;
+	float:left;
+	width:100%;
+}
+.lang-tooltip li a:before {
+	font-family: Font Awesome\ 5 Pro;
+	content: "\f00c";
+	position:absolute;
+	right:0;
+	top:0;
+	opacity:0;
+}
+.lang-tooltip li a.current-lan:before {
+	opacity:1;
+}
+.show-lang   {
+	color:#fff;
+	cursor:pointer;
+	width:100px;
+	float:right;
+	padding:10px 10px 10px 0;
+	position:relative;
+	z-index:106;
+	font-size:12px;
+	border:1px solid transparent;
+}
+.show-lang i.arrlan {
+	position:absolute;
+	left:70px;
+	top:50%;
+	line-height:10px;
+	height:10px;
+	margin-top:-5px;
+	color:#fff;
+}
+.show-lang span {
+	position:relative;
+	z-index:2;
+	float:left;
+	margin-left:10px;
+}
+.show-lang span strong {
+	padding-left:10px;
+	top:-2px;
+	font-weight:500;
+	position:relative;
+}
+.show-lang span i {
+	font-size:17px;
+}
+.show-lang .fa-angle-down {
+	position:relative;
+	top:2px;
+}
+.lang-wrap:hover .lang-tooltip  {
+	visibility:visible;
+	opacity:1;
+}
 
 
 
