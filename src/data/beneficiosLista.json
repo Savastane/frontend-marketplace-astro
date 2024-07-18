@@ -4,8 +4,8 @@
                         
                         
                         "save": "Salve",
-                        "especialista": "Studio Danilo Tatto",
-                        "bairro": "São Caetano",
+                        "especialista": "Studio Dragon Tatto",
+                        "bairro": "São Rafael",
                         "promocional_text" : "studio tadicional de tatuagem, arte qualidade e  segurança",
                         "promocional_img" : "./src/assets/images/data/promocional.jpg",
                         "especialista_img" : "./src/assets/images/data/especialista.jpg",
@@ -22,10 +22,10 @@
                         
                         
                         "save": "Salve",
-                        "especialista": "Studio Danilo Tatto",
-                        "bairro": "São Caetano",
+                        "especialista": "Studio CajaCity Tatto",
+                        "bairro": "Cajazeiras V",
                         "promocional_text" : "studio tadicional de tatuagem, arte qualidade e  segurança",
-                        "promocional_img" : "./src/assets/images/data/promocional.jpg",
+                        "promocional_img" : "./src/assets/images/data/promocional_1.png",
                         "especialista_img" : "./src/assets/images/data/especialista.jpg",
                         "price" : "R$ 15,00",
                         "reviewsscore" : "4.5",
@@ -40,10 +40,10 @@
                         
                         
                         "save": "Salve",
-                        "especialista": "Studio Danilo Tatto",
-                        "bairro": "São Caetano",
+                        "especialista": "Studio Yellow Tatto",
+                        "bairro": "Piraja",
                         "promocional_text" : "studio tadicional de tatuagem, arte qualidade e  segurança",
-                        "promocional_img" : "./src/assets/images/data/promocional.jpg",
+                        "promocional_img" : "./src/assets/images/data/promocional_2.png",
                         "especialista_img" : "./src/assets/images/data/especialista.jpg",
                         "price" : "R$ 15,00",
                         "reviewsscore" : "4.5",
@@ -58,10 +58,10 @@
                         
                         
                         "save": "Salve",
-                        "especialista": "Studio Danilo Tatto",
-                        "bairro": "São Caetano",
+                        "especialista": "Studio OK Tatto",
+                        "bairro": "Brotas",
                         "promocional_text" : "studio tadicional de tatuagem, arte qualidade e  segurança",
-                        "promocional_img" : "./src/assets/images/data/promocional.jpg",
+                        "promocional_img" : "./src/assets/images/data/promocional_3.png",
                         "especialista_img" : "./src/assets/images/data/especialista.jpg",
                         "price" : "R$ 15,00",
                         "reviewsscore" : "4.5",
