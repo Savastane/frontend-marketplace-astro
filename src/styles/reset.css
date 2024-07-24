@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, div, span, applet, object, iframe, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    @apply border-none outline-none text-base align-baseline no-underline m-0 p-0;
+    font-style: inherit;
+  }
+
+  table {
+    @apply border-separate border-spacing-0;
+  }
+
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+  }
+
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    @apply block;
+  }
+
+  blockquote, q {
+    quotes: none;
+  }
+
+  :focus {
+    @apply outline-none;
+  }
+
+  table {
+    @apply border-collapse border-spacing-0;
+  }
+
+  img {
+    @apply border-0 align-middle;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  a {
+    @apply no-underline text-black;
+  }
+
+  audio, video, canvas {
+    @apply max-w-full;
+  }
+}

@@ -8,7 +8,7 @@
         <div class=" fl-wrap lws_mobile   tabs-act block_box">
             <div class="filter-sidebar-header fl-wrap" id="filters-column">
                 <ul class="tabs-menu fl-wrap no-list-style">
-                    <li class="current"><a href="https://townhub.kwst.net/listing5.html#filters-search"> <i class="fal fa-sliders-h"></i> Filtros3 </a></li>
+                    <li class="current"><a href="https://townhub.kwst.net/listing5.html#filters-search"> <i class="fal fa-sliders-h"></i> Filtros </a></li>
                     <li><a href="https://townhub.kwst.net/listing5.html#category-search"> <i class="fal fa-image"></i>Categorias </a></li>
                 </ul>
             </div>
@@ -33,7 +33,10 @@
                                     <option>Terapias</option>
                                     <option>Estética</option>
                                     <option>Fisioterapua</option>
-                                </select><div class="nice-select chosen-select no-search-select" tabindex="0"><span class="current">Todas as Categorias</span><div class="nice-select-search-box"><input type="text" class="nice-select-search" placeholder="Search..."></div><ul class="list"><li data-value="All Categories" class="option selected">All Categories</li><li data-value="Shops" class="option">Shops</li><li data-value="Hotels" class="option">Hotels</li><li data-value="Restaurants" class="option">Restaurants</li><li data-value="Fitness" class="option">Fitness</li><li data-value="Events" class="option">Events</li></ul></div>
+                                </select>
+                                <div class="nice-select chosen-select no-search-select" tabindex="0"><span class="current">Todas as Categorias</span><div class="nice-select-search-box">
+                                 <input type="text" class="nice-select-search" placeholder="Search...">
+                                </div><ul class="list"><li data-value="All Categories" class="option selected">All Categories</li><li data-value="Shops" class="option">Shops</li><li data-value="Hotels" class="option">Hotels</li><li data-value="Restaurants" class="option">Restaurants</li><li data-value="Fitness" class="option">Fitness</li><li data-value="Events" class="option">Events</li></ul></div>
                             </div>
                             <!-- listsearch-input-item end-->
                             <!-- listsearch-input-item-->
@@ -49,11 +52,7 @@
                             </div>
                             <!-- listsearch-input-item end-->                                                     
                             <!-- listsearch-input-item-->
-                            <div class="listsearch-input-item location autocomplete-container">
-                                <span class="iconn-dec"><i class="far fa-map-marker"></i></span>
-                                <input type="text" placeholder="Onde ?" class="autocomplete-input pac-target-input" id="autocompleteid3" value="" autocomplete="off">
-                                <a href="https://townhub.kwst.net/listing5.html#"><i class="fal fa-location"></i></a>
-                            </div>
+                            
                             <!-- listsearch-input-item end-->                                                       
                             <!-- listsearch-input-item-->
                             <div class="listsearch-input-item">
@@ -176,3 +175,104 @@
         </div>
         <a class="back-tofilters color2-bg custom-scroll-link fl-wrap" href="https://townhub.kwst.net/listing5.html#filters-column" style="z-index: 12;">Back to filters <i class="fas fa-caret-up"></i></a><div></div>
     </div>
+
+<style>
+.custom-form  textarea , .custom-form input[type="text"] , .custom-form  input[type=email] , .custom-form  input[type=password] , .custom-form  input[type=button] , .listsearch-input-item input[type="text"]{
+    float: left;
+    border: 1px solid #e5e7f2;
+    background: #f9f9f9;
+    width: 100%;
+    padding: 15px 20px 15px 45px;
+    border-radius: 4px;
+	color: #7d93b2;
+	font-size:12px;
+	-webkit-appearance: none;
+	outline:none;
+	overflow:hidden;
+	z-index:1;
+}
+.custom-form  textarea::-webkit-input-placeholder , .custom-form  input[type="text"]::-webkit-input-placeholder  , .listsearch-input-item input[type="text"]::-webkit-input-placeholder  {
+	color: #7d93b2;
+	font-weight: 500;
+	font-size: 12px;
+ 	font-family: 'Roboto' ;
+}
+.custom-form  textarea:focus , .custom-form input[type="text"]:focus  , .custom-form  input[type=email]:focus  , .custom-form  input[type=password]:focus , .listsearch-input-item input[type="text"]:focus  {
+	background:#fff;
+	box-shadow: 0px 10px 14px 0px rgba(12, 0, 46, 0.06);
+}
+price-opt .listsearch-input-item{
+	width:180px;
+	float:left;
+	margin-bottom:0;
+}
+.price-opt .listsearch-input-item .nice-select{
+	height:41px;
+	line-height:41px;
+}
+.listsearch-input-item {
+	position:relative;
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+    font-family: 'Roboto';
+}
+.listsearch-input-item span.iconn-dec , .main-search-input-item span.iconn-dec{
+	position:absolute;
+	left:20px;
+	bottom:15px;
+}
+.main-search-input-item span.iconn-dec {
+	bottom:16px;
+}
+.listsearch-input-item .header-search-button{
+	width:100%;
+	height:41px;
+	line-height:41px;
+	font-weight: 400;
+    font-size: 13px;
+	border-radius:30px;
+	position:relative;
+}
+.listsearch-input-item .header-search-button span {
+	position:relative;
+	padding-left:12px;
+}
+.listsearch-input-item .header-search-button span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 10px;
+    margin-top: -5px;
+    width: 1px;
+    background: rgba(255,255,255,0.3);
+}
+
+.header-search-input .nice-select {
+	background: rgba(255,255,255,0.11);
+	height:50px;
+	line-height:50px;
+	border:none;
+	color:#fff;
+	border-radius:4px;
+	font-weight:400;
+}
+.header-search-input .nice-select input::-webkit-input-placeholder   {
+    color: #7d93b2;
+}
+.header-search-input .nice-select input:focus {
+	border-color:#eee;
+}
+.header-search-input .nice-select  .option {
+    color: #7d93b2;
+}
+.nice-select .option.selected {
+	color:#fff;
+}
+
+
+
+
+
+</style>

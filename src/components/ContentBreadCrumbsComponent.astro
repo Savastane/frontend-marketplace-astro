@@ -7,3 +7,292 @@
 </div>
 
 
+<!-- <style>
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.nav-holder nav li a.act-link,
+.nav-holder nav li a:hover,
+.header-search_btn i,
+.show-reg-form i,
+.nice-select:before,
+.main-register_title span strong,
+.lost_password a,
+.custom-form.dark-form label span,
+.filter-tags input:checked:after,
+.custom-form .filter-tags input:checked:after,
+.custom-form .filter-tags label a,
+.section-subtitle,
+.footer-social li a,
+.subfooter-nav li a,
+#footer-twiit .timePosted a:before,
+#subscribe-button i,
+.nice-select .nice-select-search-box:before,
+.nav-holder nav li a i,
+.show-lang i,
+.lang-tooltip a:hover,
+.main-register-holder .tabs-menu li a i,
+.header-modal_btn i,
+.custom-form .log-submit-btn:hover i,
+.main-search-input-item label i,
+.header-search-input label i,
+.location a,
+.footer-contacts li i,
+#footer-twiit p.tweet:after,
+.subscribe-header h3 span,
+.footer-link i,
+.footer-widget-posts .widget-posts-date i,
+.clear-wishlist,
+.widget-posts-descr-link a:hover,
+.geodir-category-location a i,
+.header-modal-top span strong,
+.cart-btn:hover i,
+.to-top,
+.map-popup-location-info i,
+.infowindow_wishlist-btn,
+.infobox-raiting_wrap span strong,
+.map-popup-footer .main-link i,
+.infoBox-close,
+.mapnavbtn,
+.mapzoom-in,
+.mapzoom-out,
+.location-btn,
+.list-main-wrap-title h2 span,
+.grid-opt li span.act-grid-opt,
+.reset-filters i,
+.avatar-tooltip strong,
+.facilities-list li i,
+.geodir-opt-list a:hover i,
+.geodir-js-favorite_btn:hover i,
+.geodir-category_contacts li span i,
+.geodir-category_contacts li a:hover,
+.close_gcc:hover,
+.listsearch-input-wrap-header i,
+.listsearch-input-item span.iconn-dec,
+.more-filter-option-btn i,
+.clear-filter-btn i,
+.back-to-filters,
+.price-rage-wrap-title i,
+.listsearch-input-wrap_contrl li a i,
+.geodir-opt-tooltip strong,
+.listing-features li i,
+.gdop-list-link:hover i,
+.show-hidden-sb i,
+.filter-sidebar-header .tabs-menu li a i,
+.datepicker--day-name,
+.scroll-nav li a.act-scrlink,
+.scroll-nav-wrapper-opt a.scroll-nav-wrapper-opt-btn i,
+.show-more-snopt:hover,
+.show-more-snopt-tooltip a i,
+.breadcrumbs a:before,
+.list-single-stats li span i,
+.list-single-main-item-title h3 i,
+.box-widget-item-header i,
+.opening-hours ul li.todaysDay span.opening-hours-day,
+.listing-carousel-button,
+.list-single-main-item-title i,
+.list-single-main-item-title:before,
+.box-widget-item-header:before,
+.list-author-widget-contacts li span i,
+.btn i,
+.reviews-comments-item-date i,
+.rate-review i,
+.chat-widget_input button,
+.chat-widget_header h3 a,
+.custom-form .review-total span input,
+.photoUpload span i,
+.bottom-bcw-box_link a:hover,
+.custom-form label i,
+.video-box-btn,
+.claim-widget-link a,
+.custom-form .quantity span i,
+.scroll-nav li a.act-scrlink i,
+.share-holder.hid-share .share-container .share-icon,
+.sc-btn,
+.list-single-main-item-title h3 span,
+.ss-slider-cont,
+.team-social li a,
+.team-info h4,
+.simple-title span,
+.back-tofilters i,
+.breadcrumbs.block-breadcrumbs:before,
+.breadcrumbs.top-breadcrumbs a:before,
+.top-breadcrumbs .container:before,
+.header-sec-link a i,
+.map-modal-container h3 a,
+.map-modal-close,
+.post-opt li i,
+.cat-item li span,
+.cat-item li a:hover,
+.brd-show-share i,
+.author-social li a,
+.post-nav-text strong,
+.post-nav:before,
+.faq-nav li a.act-scrlink i,
+.faq-nav li a.act-scrlink:before,
+.faq-nav li a:hover i,
+.log-massage a,
+.cart-total strong,
+.action-button i,
+.dashboard-header-stats-item span,
+.dashboard-header-stats-item i,
+.add_new-dashboard i,
+.tfp-btn strong,
+.user-profile-menu li a i,
+.logout_btn i,
+.dashboard-message-text p a,
+.dashboard-message-time i,
+.pass-input-wrap span,
+.fuzone .fu-text i,
+.radio input[type="radio"]:checked + span:before,
+.booking-list-message-text h4 span,
+.dashboard-message-text h4 a:hover,
+.chat-contacts-item .chat-contacts-item-text span,
+.recomm-price i,
+.time-line-icon i,
+.testi-link,
+.testimonilas-avatar h4,
+.testimonilas-text:before,
+.testimonilas-text:after,
+.cc-btn,
+.single-facts_2 .inline-facts-wrap .inline-facts i,
+.images-collage-title,
+.collage-image-input i,
+.process-count,
+.listing-counter span,
+.main-search-input-tabs .tabs-menu li.current a,
+.hero-categories li a i,
+.main-search-input-item span.iconn-dec,
+.main-search-button i,
+.shb,
+.follow-btn i,
+.user-profile-header_stats li span,
+.follow-user-list li:hover a span,
+.dashboard-tabs .tabs-menu li a span,
+.bold-facts .inline-facts-wrap .num,
+.page-scroll-nav nav li a i,
+.mob-nav-content-btn i,
+.map-close,
+.post-opt-title a:hover,
+.post-author a:hover span,
+.post-opt a:hover,
+.breadcrumbs a:hover,
+.reviews-comments-header h4 a:hover,
+.listing-item-grid_title h3 a:hover,
+.geodir-category-content h3 a:hover,
+.footer-contacts li a:hover,
+.footer-widget-posts .widget-posts-descr a:hover,
+.footer-link:hover,
+.geodir-category-opt h4 a:hover,
+.header-search-button:hover i,
+.list-author-widget-contacts li a:hover,
+.list-single-author a:hover,
+.close_sbfilters,
+.show-lang:hover i,
+.show-reg-form:hover,
+.close-reg:hover,
+.pac-icon:before,
+.pi-text h4,
+.section-subtitle,
+.close-lpt {
+  @apply text-[#4DB7FE];
+}
+
+
+.section-title .breadcrumbs {
+  @apply mt-5;
+}
+.section-title .breadcrumbs a,
+.section-title .breadcrumbs span {
+  @apply text-[rgba(255,255,255,0.71)] inline-block relative font-medium px-4 py-0;
+}
+.section-title .breadcrumbs span,
+.section-title .breadcrumbs a:hover {
+  @apply text-white;
+}
+section.color-bg .section-title .breadcrumbs {
+  @apply mt-0 mb-2.5;
+}
+section.color-bg .section-title .breadcrumbs a:before {
+  background: #fff !important;
+}
+
+
+
+.breadcrumbs.inline-breadcrumbs {
+	margin-bottom:25px;
+}
+
+.breadcrumbs.inline-breadcrumbs:before , .top-breadcrumbs .container:before {
+    font-family: Font Awesome\ 5 Pro;
+    content: "\f14c";
+    position: absolute;
+    right: 30px;
+    top:50%;
+	height:22px;
+	line-height:22px;
+	margin-top:-11px;
+    font-size: 22px;
+    font-weight: 100;
+    color: #ADC7DD;
+}
+.breadcrumbs.inline-breadcrumbs a , .breadcrumbs.inline-breadcrumbs span , .breadcrumbs.top-breadcrumbs a , .breadcrumbs.top-breadcrumbs span {
+	float:left;
+	padding:0 16px;
+	position:relative;
+	color: #888DA0;
+	font-size:12px;
+	font-weight:600;
+}
+
+.breadcrumbs.inline-breadcrumbs span {
+	color:#999;
+}
+.breadcrumbs.inline-breadcrumbs a:first-child , .dasboard-breadcrumbs a:first-child  {
+	padding-left:0;
+}
+
+.breadcrumbs.inline-breadcrumbs {
+	margin-bottom:25px;
+}
+
+.breadcrumbs.inline-breadcrumbs:before , .top-breadcrumbs .container:before {
+    font-family: Font Awesome\ 5 Pro;
+    content: "\f14c";
+    position: absolute;
+    right: 30px;
+    top:50%;
+	height:22px;
+	line-height:22px;
+	margin-top:-11px;
+    font-size: 22px;
+    font-weight: 100;
+    color: #ADC7DD;
+}
+
+.breadcrumbs.inline-breadcrumbs a , .breadcrumbs.inline-breadcrumbs span , .breadcrumbs.top-breadcrumbs a , .breadcrumbs.top-breadcrumbs span {
+	float:left;
+	padding:0 16px;
+	position:relative;
+	color: #888DA0;
+	font-size:12px;
+	font-weight:600;
+}
+
+.breadcrumbs.inline-breadcrumbs a , .breadcrumbs.inline-breadcrumbs span , .breadcrumbs.top-breadcrumbs a , .breadcrumbs.top-breadcrumbs span {
+	float:left;
+	padding:0 16px;
+	position:relative;
+	color: #888DA0;
+	font-size:12px;
+	font-weight:600;
+}
+.breadcrumbs.inline-breadcrumbs span {
+	color:#999;
+}
+.breadcrumbs.inline-breadcrumbs a:first-child , .dasboard-breadcrumbs a:first-child  {
+	padding-left:0;
+}
+</style> -->
