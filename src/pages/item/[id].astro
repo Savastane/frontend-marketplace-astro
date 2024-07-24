@@ -1,0 +1,18 @@
+---
+import TattoLayout from '../../layouts/TattoLayout.astro';
+import HeaderComponent from '../../components/HeaderComponent.astro';
+import ItemContentComponent from '../../components/Item/ItemContentComponent.astro';
+
+
+
+
+const { id } = Astro.params;
+---
+<TattoLayout>
+	<div id="main" style="opacity: 1;">
+		
+		<HeaderComponent />
+		<ItemContentComponent />		
+		
+	</div>  
+</TattoLayout>

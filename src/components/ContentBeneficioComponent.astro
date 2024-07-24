@@ -1,15 +1,15 @@
 ---      
-   const { save, author, state, reviewscount, reviewsscore, bairro, especialista, phone, email, promocional_img, especialista_img, promocional_text  } = Astro.props
+   const { save, author, state, reviewscount, reviewsscore, bairro, especialista, phone, email, promocional_img, especialista_img, promocional_text, url_link  } = Astro.props
 ---
     <!-- listing-item  -->
     <div class="listing-item" style="height: 526px;">
         <article class="geodir-category-listing fl-wrap">
             <div class="geodir-category-img">
                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>{save}</span></div>
-                <a href="https://townhub.kwst.net/listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                <a href={url_link} class="geodir-category-img-wrap fl-wrap">
                 <img src={promocional_img} alt=""> 
                 </a>
-                <div class="listing-avatar"><a href="https://townhub.kwst.net/author-single.html"><img src={especialista_img} alt=""></a>
+                <div class="listing-avatar"><a href={url_link}><img src={especialista_img} alt=""></a>
                     <span class="avatar-tooltip">Adicionado por   <strong>{author}}</strong></span>
                 </div>
                 <div class="geodir_status_date gsd_open"><i class="fal fa-lock-open"></i>{state}</div>
@@ -25,7 +25,7 @@
             <div class="geodir-category-content fl-wrap title-sin_item">
                 <div class="geodir-category-content-title fl-wrap">
                     <div class="geodir-category-content-title-item">
-                        <h3 class="title-sin_map"><a href="https://townhub.kwst.net/listing-single.html">{especialista}</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                        <h3 class="title-sin_map"><a href={url_link}>{especialista}</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
                         <div class="geodir-category-location fl-wrap"><a href="https://townhub.kwst.net/listing5.html#"><i class="fas fa-map-marker-alt"></i>{bairro}</a></div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
     <!-- listing-item end -->
 
 
- <style>
+ <!-- <style>
 
 .fl-wrap {
     float: left;
@@ -107,4 +107,4 @@ div {
 }
 
 </style>
-        
+         -->

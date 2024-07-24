@@ -86,169 +86,131 @@
         </nav>
     </div>
 
-<style>
-.color-bg   , .nice-select .option.selected.focus , .nav-holder nav li a:before , .section-separator:before  , .footer-widget h3:before  ,   .cluster div , .pagination a.current-page, .pagination a:hover  ,  .irs-bar , .irs-slider ,  .irs-bar-edge  , .catcar-scrollbar .swiper-scrollbar-drag , .checket-cat:after , .scroll-nav li a.act-scrlink:before  , .listing-carousel_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active , .box-media-zoom , .daterangepicker td.active , .list-widget-social li a , .btn.border-btn:hover  , .chat-message.chat-message_user p  , .chat-widget-button   , .tags-stylwrap a:hover , .custom-form .quantity input.qty , .listing-hero-section .list-single-header-item h1:before , .box-item a , .menu-filters a.menu-filters-active , .promo-link i , .ss-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active , .accordion a.toggle span , .search-widget .search-submit:hover   , .reply-item:hover , #progressbar li.active span , #progressbar li:before , .user-profile-menu li a.user-profile-act:before , .new-dashboard-item  , .dashboard-title:before , .dhs-controls div:hover , .message-counter , .chat-contacts-item:after , .tc-pagination   .swiper-pagination-bullet.swiper-pagination-bullet-active , .tc-pagination2  .swiper-pagination-bullet.swiper-pagination-bullet-active , .down-btn i   , .listing-filters  a.gallery-filter-active , .single-facts_2 .inline-facts-wrap:before  , .single-social li  a   , .mob-nav-content-btn.slsw_vis  , .infobox-status , .header-search_container .header-search-button:hover , .pac-item:hover  , .process-item_time-line:before  , .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover , .listing-item-grid_title h3:before {
-	background:#4DB7FE;
-}
+ <!-- <style>
 
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.color-bg,
+.nice-select .option.selected.focus,
+.nav-holder nav li a:before,
+.section-separator:before,
+.footer-widget h3:before,
+.cluster div,
+.pagination a.current-page,
+.pagination a:hover,
+.irs-bar,
+.irs-slider,
+.irs-bar-edge,
+.catcar-scrollbar .swiper-scrollbar-drag,
+.checket-cat:after,
+.scroll-nav li a.act-scrlink:before,
+.listing-carousel_pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.box-media-zoom,
+.daterangepicker td.active,
+.list-widget-social li a,
+.btn.border-btn:hover,
+.chat-message.chat-message_user p,
+.chat-widget-button,
+.tags-stylwrap a:hover,
+.custom-form .quantity input.qty,
+.listing-hero-section .list-single-header-item h1:before,
+.box-item a,
+.menu-filters a.menu-filters-active,
+.promo-link i,
+.ss-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.accordion a.toggle span,
+.search-widget .search-submit:hover,
+.reply-item:hover,
+#progressbar li.active span,
+#progressbar li:before,
+.user-profile-menu li a.user-profile-act:before,
+.new-dashboard-item,
+.dashboard-title:before,
+.dhs-controls div:hover,
+.message-counter,
+.chat-contacts-item:after,
+.tc-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.tc-pagination2 .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.down-btn i,
+.listing-filters a.gallery-filter-active,
+.single-facts_2 .inline-facts-wrap:before,
+.single-social li a,
+.mob-nav-content-btn.slsw_vis,
+.infobox-status,
+.header-search_container .header-search-button:hover,
+.pac-item:hover,
+.process-item_time-line:before,
+.lg-actions .lg-next:hover,
+.lg-actions .lg-prev:hover,
+.listing-item-grid_title h3:before {
+  background: #4db7fe;
+}
 .no-list-style {
-	font-family:'Roboto';	
+  font-family: "Roboto";
 }
-
 .nav-button-wrap {
-	float:right;
-	height:36px;
-	width:36px;
-	cursor:pointer;
-	position:relative;
-	border-radius:4px;
-	top:24px;
-	margin-right:16px;
-	display:none;
+  @apply float-right h-9 w-9 cursor-pointer relative rounded hidden mr-4 top-6 float-right h-9 w-9 cursor-pointer relative rounded hidden mr-4 top-6;
 }
-
-.nav-button  {
-	position:absolute;
-	top:50%;
-	left:50%;
-	width:22px;
-	height:20px;
-	margin-left:-11px;
-	margin-top:-6px;
+.nav-button {
+  @apply absolute w-[22px] h-5 ml-[-11px] -mt-1.5 left-2/4 top-2/4 absolute w-[22px] h-5 ml-[-11px] -mt-1.5 left-2/4 top-2/4;
 }
-
 .nav-holder {
-	float:left;
-	position:relative;
-	top:18px;
-	margin-left:40px;
-	opacity:1;
-	right:0;
-	visibility:visible;
-	z-index:20;
+  @apply float-left relative opacity-100 visible z-20 ml-10 right-0 top-[18px];
 }
 .nav-holder nav {
-	position:relative;
-	float: right;
+  @apply relative float-right;
 }
-.nav-holder nav li{
-	float:left;
-	position:relative;
-	margin-left:6px;
-	height:50px;
+.nav-holder nav li {
+  @apply float-left relative h-[50px] ml-1.5;
 }
 .nav-holder nav li ul {
-	margin: 30px 0 0 0;
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-	min-width:150px;
-	top: 50px;
-	left: 0;
-	z-index: 1;
-	padding:10px 0;
-	background:#fff;
-	border-radius:6px;
-	border:1px solid #eee;
-	transition: all .2s ease-in-out;
-	list-style:none;
+  @apply opacity-0 invisible absolute min-w-[150px] z-[1] border transition-all duration-[0.2s] ease-[ease-in-out] mt-[30px] mb-0 mx-0 px-0 py-2.5 rounded-md border-solid border-[#eee] left-0 top-[50px];
+  background: #fff;
+  list-style: none;
 }
 .nav-holder nav li:hover > ul {
-	opacity: 1;
-	visibility: visible;
-	margin: 0;
+  @apply opacity-100 visible m-0;
 }
 .nav-holder nav li ul li ul {
-	top: -10px  ;
-	left: -100%;
-	margin-left:25px;
-	margin-top:0;
-	max-width:150px;
-	list-style:none;
+  @apply max-w-[150px] ml-[25px] mt-0 -left-full -top-2.5;
+  list-style: none;
 }
-.nav-holder nav li ul li:hover  > ul  {
-	opacity: 1;
-	visibility: visible;
-	margin-right:0px;
+.nav-holder nav li ul li:hover > ul {
+  @apply opacity-100 visible mr-0;
 }
 .nav-holder nav li ul li {
-	width:100%;
-	float:left;
-	height:auto;
-	position:relative;
+  @apply w-full float-left h-auto relative;
 }
 .nav-holder nav li a {
-	float: left;
-	padding: 10px;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    text-transform: none;
-    line-height: 25px;
-    letter-spacing: 0px;
-    color: #fff;
-    transition: all 100ms linear;
+  @apply float-left text-[13px] not-italic font-semibold normal-case leading-[25px] tracking-[0px] text-white transition-all duration-100 ease-linear p-2.5;
 }
 .nav-holder nav li a i {
-	padding-left:6px;
-    transition: all 200ms linear;
+  @apply transition-all duration-200 ease-linear pl-1.5;
 }
 .nav-holder nav li a:hover i {
-    transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 .nav-holder nav li ul a {
-	color:#566985;
-	float:left;
-	width:100%;
-	font-weight:500;
-	text-align:left;
-	padding:5px 15px;
+  @apply text-[#566985] float-left w-full font-medium text-left px-[15px] py-[5px];
 }
-nav li ul a:before , nav li ul a:after {
-	display:none;
+nav li ul a:before,
+nav li ul a:after {
+  @apply hidden;
 }
-.nav-button-wrap {
-	float:right;
-	height:36px;
-	width:36px;
-	cursor:pointer;
-	position:relative;
-	border-radius:4px;
-	top:24px;
-	margin-right:16px;
-	display:none;
-}
-.nav-button  {
-	position:absolute;
-	top:50%;
-	left:50%;
-	width:22px;
-	height:20px;
-	margin-left:-11px;
-	margin-top:-6px;
-}
-.nav-button span{
-	float:left;
-	width:100%;
-	height:2px;
-	background:#fff;
-	margin-bottom:4px;
-	border-radius:4px;
-    transition: all 200ms linear;
+.nav-button span {
+  @apply float-left w-full h-0.5 rounded transition-all duration-200 ease-linear mb-1;
+  background: #fff;
 }
 .nav-button-wrap.vismobmenu_btn span {
-	display:none;
+  @apply hidden;
 }
 .nav-button-wrap.vismobmenu_btn:before {
-	font-family: Font Awesome\ 5 Pro;
-	content: "\f00d";
-	position:absolute;
-	color:#fff;
-	font-size:18px;
-	top:8px;
-	left:12px;
-	font-weight:100;
+  @apply content-["\f00d"] absolute text-white text-lg font-thin left-3 top-2;
+  font-family: Font Awesome\5 Pro;
 }
 
-
-</style>
+</style>  -->

@@ -16,39 +16,25 @@ import HeaderAuthComponent from '../components/HeaderAuthComponent.astro';
 
 </header>
 
-<style>
-    .main-header {
-	position:fixed;
-	width:100%;
-	left:0;
-	top:0;
-	height:80px;
-	background:#2e3f6e;
-	/* background:#8d1601; */
-	/* background: #7B68EE;  */
-
-	z-index:31;
-	padding:0 40px;
-    -webkit-transform: translate3d(0,0,0);
+<!-- <style>
+.main-header {
+  @apply fixed w-full h-20 z-[31] px-10 py-0 left-0 top-0 before:content-[''] before:absolute before:w-[480px] before:h-full before:opacity-100 before:transition-all before:duration-[0.3s] before:ease-[ease-in-out] before:right-0 before:bottom-0;
+  background: #2e3f6e;
+  /* background:#8d1601; */
+  /* background: #7B68EE;  */
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .main-header:before {
-	content:'';
-	position:absolute;
-	right:0;
-	width:480px;
-	height:100%;
-	bottom:0;
-	opacity:1;
-	transition: all .3s ease-in-out;
-     background: #3d528b; 
-	 /* background: #9370DB;  */
-	 /* 9370DB */
-	/* background: #b48502; */
+  background: #3d528b;
+  /* background: #9370DB;  */
+  /* 9370DB */
+  /* background: #b48502; */
 }
 .dsh-header.main-header:before {
-	width:540px;
+  @apply w-[540px];
 }
 .main-header.vis-searchdec:before {
-	opacity:0;
+  @apply opacity-0;
 }
-</style>
+
+</style>  -->
